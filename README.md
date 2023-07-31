@@ -6,7 +6,9 @@
 
 ## Enviornment variables used
 
-- `PORT` Port on which server shiould run
+You can use both ways to declare envs (export them or use .env file)
+
+- `PORT` Port on which server should run
 - `NODE_ENV` node env
 - `DB_PROD_URL` prod db url. eg: 'postgres://user:pass@localhost:5432/prod'
 - `DB_DEVLOPMENT_URL` development db. eg: 'postgres://user:pass@localhost:5432/dev'
