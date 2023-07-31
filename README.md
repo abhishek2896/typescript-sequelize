@@ -8,7 +8,7 @@
 
 - Clone the repo: `git clone https://github.com/abhishek2896/typescript-sequelize.git`
 - Install dependencies: `npm install`
-- Start the server: `npm run test`
+- Test the server: `npm run test`
 - Start the server: `npm start`
 
 ## Testing the API
