@@ -58,11 +58,6 @@ You can use both ways to declare envs (export them or use .env file)
     - headers: {
         Authorisation: Bearer {token}
     }
-    - body: {
-        name: string,
-        email: string,
-        password: string
-    }
 
 - Update One user
     - endpoint: `/users/update/:id`
@@ -79,9 +74,6 @@ You can use both ways to declare envs (export them or use .env file)
     - method: `DELETE`
     - headers: {
         Authorisation: Bearer {token}
-    }
-    - body: {
-        name: string
     }
 
 
