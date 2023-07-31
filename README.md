@@ -20,6 +20,71 @@ You can use both ways to declare envs (export them or use .env file)
 - `ADMIN_PASSWORD` admin user password
 - `LOGGING` logging for sequilize 
 
+
+## Exposed endpoints
+
+- Create user
+    - endpoint: `/users/create`
+    - method: `POST`
+    - body: {
+        name: string,
+        email: string,
+        password: string
+    }
+
+- Login user
+    - endpoint: `/users/login`
+    - method: `POST`
+    - body: {
+        email: string,
+        password: string
+    }
+
+- Find multiple users
+    - endpoint: `/users/findAll`
+    - method: `POST`
+    - headers: {
+        Authorisation: Bearer {token}
+    }
+    - body: {
+        search: string,
+        limit: number,
+        page: number
+    }
+
+- Find One user
+    - endpoint: `/users/findOne/:id`
+    - method: `GET`
+    - headers: {
+        Authorisation: Bearer {token}
+    }
+    - body: {
+        name: string,
+        email: string,
+        password: string
+    }
+
+- Update One user
+    - endpoint: `/users/update/:id`
+    - method: `PUT`
+    - headers: {
+        Authorisation: Bearer {token}
+    }
+    - body: {
+        name: string
+    }
+
+- Delete one user
+    - endpoint: `/users/deleteUser/:id`
+    - method: `DELETE`
+    - headers: {
+        Authorisation: Bearer {token}
+    }
+    - body: {
+        name: string
+    }
+
+
 ## Installation
 
 - Clone the repo: `git clone https://github.com/abhishek2896/typescript-sequelize.git`
